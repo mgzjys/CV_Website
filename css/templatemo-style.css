@@ -160,7 +160,9 @@ button:focus { outline: none; }
 
 .tm-2-col-container,
 .tm-3-col-container {
+
 	margin: 0 auto;
+	margin-top: 36px;
 }
 
 .tm-2-col-container { padding: 20px 30px; }
