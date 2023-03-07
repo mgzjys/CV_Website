@@ -46,6 +46,16 @@
   }
 }
 </style>
+<script>
+    // get the video element
+var video = document.querySelector('.cd-bg-video');
+
+// check if the screen size is smaller than 768px
+if (window.matchMedia('(max-width: 768px)').matches) {
+  // pause the video
+  video.pause();
+}
+</script>
 
 <body>
 
@@ -109,10 +119,16 @@
                     <div class="container-fluid js-tm-page-content tm-page-1" data-page-no="1">
                     
 
-                        <div class="cd-bg-video-wrapper" data-video="video/cloud">
-                            <!-- video element will be loaded using jQuery -->
-                        </div> <!-- .cd-bg-video-wrapper -->
+                        <!-- <div class="cd-bg-video-wrapper" data-video="video/cloud">
+                        </div>  -->
 
+                        <div class="cd-bg-video-wrapper" data-video="video/cloud">
+                            <video class="cd-bg-video" autoplay loop muted>
+                              <source src="video/cloud.mp4" type="video/mp4">
+                              Your browser does not support HTML5 video.
+                            </video>
+                          </div>
+                          
                         <div class="row">
 
                             <div class="col-xs-12">
@@ -159,6 +175,11 @@
                     <div class="container-fluid js-tm-page-content" data-page-no="2">
 
                         <div class="cd-bg-video-wrapper" data-video="video/road">
+
+                            <video class="cd-bg-video" autoplay loop muted>
+                                <source src="video/road.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                              </video>
                             <!-- video element will be loaded using jQuery -->
                         </div> <!-- .cd-bg-video-wrapper -->
                         <div class="row">
@@ -333,6 +354,10 @@
                     <div class="container-fluid js-tm-page-content" data-page-no="3">
 
                         <div class="cd-bg-video-wrapper" data-video="video/nyc">
+                            <video class="cd-bg-video" autoplay loop muted>
+                                <source src="video/nyc.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                              </video>
                             <!-- video element will be loaded using jQuery -->
                         </div> <!-- .cd-bg-video-wrapper -->
 
@@ -641,6 +666,10 @@
                     <div class="container-fluid js-tm-page-content" data-page-no="4">
 
                         <div class="cd-bg-video-wrapper" data-video="video/fall">
+                            <video class="cd-bg-video" autoplay loop muted>
+                                <source src="video/fall.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                              </video>
                             <!-- video element will be loaded using jQuery -->
                         </div> <!-- .cd-bg-video-wrapper -->
 
@@ -756,8 +785,10 @@
                     <div class="container-fluid js-tm-page-content" data-page-no="5">
 
                         <div class="cd-bg-video-wrapper" data-video="video/fall">
-                            <!-- video element will be loaded using jQuery -->
-                        </div> <!-- .cd-bg-video-wrapper -->
+                            <video class="cd-bg-video" autoplay loop muted>
+                                <source src="video/fall.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                              </video>                        </div> <!-- .cd-bg-video-wrapper -->
 
                         <div class="tm-img-gallery-container">
 
